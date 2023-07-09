@@ -1,0 +1,150 @@
+html{
+    background-color: white;
+}
+
+.container1{
+    display: grid;
+    grid-template-rows: 100px auto ;
+    grid-template-columns: 100px auto ;
+    background-color: white;
+    margin: 5px;
+    border: solid rgb(251, 92, 34);
+}
+
+.logo{
+    height: 60px;
+    width: 60px;  
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(251, 92, 34);
+}
+
+.icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid rgb(251, 92, 34);
+}
+
+.container2{
+    display: grid;
+    grid-template-rows: 80px 80px;
+    grid-template-columns: 100px auto ;
+    background-color: white;
+    margin: 5px;
+}
+
+.container3{
+    display: grid;
+    grid-template-rows: 465px auto auto;
+    grid-template-columns: 100px auto;
+    background-color: white;
+    margin: 5px;
+}
+
+.conteudo{
+    grid-area: 1 / 2 / 1 / 2;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.municipios{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    border: solid orange;
+    border-radius: 10px;
+    height: 400px;
+    overflow: auto;
+    padding: 20px 40px 20px 40px;
+    gap: 35px;
+}
+
+.titulo2{
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(251, 92, 34);
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 0px;
+    grid-area: 2 / 2 / 3 / 2;
+}
+
+.borda{
+    background-color: #D9D9D9;
+    color: #000000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button2{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    grid-area: 2 / 2 / 2 / 2;
+
+}
+
+.borda::-webkit-scrollbar {
+    width: 15px;
+}
+  
+.borda::-webkit-scrollbar-track {
+    background:  rgb(229, 229, 229);
+    border-radius: 0px 0px 10px 0px;
+    -webkit-box-shadow: inset 0 0 6px grey;
+}
+   
+.borda::-webkit-scrollbar-thumb {
+    background: rgb(125, 120, 120);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px grey;
+    background-image: -webkit-linear-gradient(45deg,
+    rgb(115, 115, 115) 25%,
+    rgb(115, 115, 115) 50%,
+    rgb(115, 115, 115) 75%,
+    );
+}
+
+.municipios::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+.municipios::-webkit-scrollbar-track {
+    background:  white;
+    border-radius: 0px 0px 10px 0px;
+    -webkit-box-shadow: inset 0 0 6px white;
+}
+   
+.municipios::-webkit-scrollbar-thumb {
+    background: rgb(240, 85, 51);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(240, 85, 51);
+    background-image: -webkit-linear-gradient(45deg,
+    rgb(240, 85, 51),
+    rgb(240, 85, 51),
+    rgb(240, 85, 51),
+    );
+}
+
+
